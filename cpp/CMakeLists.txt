@@ -55,4 +55,22 @@ add_executable(cpp main.cpp
         "hashing/double hashing/DHtable.cpp"
         "hashing/double hashing/DHtable.h"
         hashing/probing/linear/LProbingHT.cpp
-        hashing/probing/linear/LProbingHT.h)
+        hashing/probing/linear/LProbingHT.h
+        strings/Anagram.cpp
+        strings/FindDuplicates.cpp
+        strings/InvertCase.cpp
+        strings/LexicographicalCompare.cpp
+        strings/Permutation.cpp
+        strings/Palindrome.cpp
+        recursion/Factorial.cpp
+        recursion/Fibonacci.cpp
+        recursion/TaylorSeries.cpp
+        "matrices/diagonal matrix/DiagMatrix.cpp"
+        "matrices/diagonal matrix/DiagMatrix.h"
+        "matrices/lower triangular matrix/LTMatrix.cpp"
+        "matrices/lower triangular matrix/LTMatrix.h"
+        queues/array/circular/CQueue.h
+        queues/array/circular/CQueue.cpp
+        queues/array/deque/DEQUEUE.h
+        hashing/probing/quadratic/QProbingHT.cpp
+        hashing/probing/quadratic/QProbingHT.h)

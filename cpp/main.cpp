@@ -1,15 +1,15 @@
 #include <iostream>
-#include <vector>
-#include "hashing/double hashing/DHtable.h"
+#include "hashing/probing/quadratic/QProbingHT.h"
 
 using namespace std;
 
 int main() {
     int A[] = {2,12,22,32,432};
-    DHtable h;
-    h.insert(5);
-    h.insert(25);
-    cout << h.getLoadFactor();
+    QProbingHT obj;
 
+    obj.insert(1);
+
+
+    cout << obj.indexOf(1);
     return 0;
 }

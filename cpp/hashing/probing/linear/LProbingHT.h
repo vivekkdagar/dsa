@@ -12,11 +12,9 @@
 class LProbingHT {
     std::vector<int> HT;
 public:
-    LProbingHT();
-
-    int hash(int key);
-
-    int probe(int key);
+    LProbingHT() {
+        HT.resize(SIZE);
+    }
 
     void insert(int key);
 
@@ -29,6 +27,12 @@ public:
     double getLoadFactor();
 
     virtual ~LProbingHT();
+private:
+    static int hash(int key) {
+        return key % SIZE;
+    }
+
+    int probe(int key);
 };
 
 

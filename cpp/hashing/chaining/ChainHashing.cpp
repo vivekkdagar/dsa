@@ -12,11 +12,6 @@ ChainHashing::ChainHashing() {
     for(auto i: HT)
         i = nullptr;
 }
-
-int ChainHashing::hash(int key) {
-    return key % SIZE;
-}
-
 void ChainHashing::insert(int key) {
     // Get the index
     int hashIndex = hash(key);

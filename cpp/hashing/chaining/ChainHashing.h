@@ -21,7 +21,9 @@ class ChainHashing {
 public:
     ChainHashing();
 
-    int hash(int key);
+    static int hash(int key) {
+        return key % SIZE;
+    }
 
     void insert(int key);
 
@@ -30,6 +32,7 @@ public:
     int remove(int key);
 
     virtual ~ChainHashing();
+
 private:
     int indexOf(int key);
 };

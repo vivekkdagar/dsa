@@ -4,15 +4,6 @@
 
 #include "LProbingHT.h"
 
-
-LProbingHT::LProbingHT() {
-    HT.resize(SIZE);
-}
-
-int LProbingHT::hash(int key) {
-    return key % SIZE;
-}
-
 int LProbingHT::probe(int key) {
     int idx = hash(key), i{0};
     while (HT[(idx + i) % SIZE] not_eq 0)
